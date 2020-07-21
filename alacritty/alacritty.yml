@@ -1,0 +1,53 @@
+window:
+    padding:
+      x: 2 
+      y: 4 
+    dimensions:
+      columns: 90
+      lines: 24
+font:
+  normal:
+    family: Iosevka Nerd Font
+    style: Regular
+
+  bold:
+    family: Iosevka Nerd Font
+    style: Bold
+
+  italic:
+    family: Iosevka Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: Iosevka Nerd Font
+    style: Bold Italic
+
+  size: 13    
+
+colors: 
+  primary:
+    background: '0x282828'
+    foreground: '0xd4be98'
+
+  normal:
+    black:   '0x3c3836'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xd8a657'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xd4be98'
+
+  bright:
+    black:   '0x3c3836'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xd8a657'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xd4be98'
+
+cursor:
+  style: Beam
