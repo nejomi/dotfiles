@@ -12,6 +12,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'alvan/vim-closetag'
+Plug 'Asheq/close-buffers.vim'
 
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 

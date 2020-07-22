@@ -46,4 +46,6 @@ nnoremap <Leader>O O<Esc>^Da
 vmap <C-_> <plug>NERDCommenterToggle
 nmap <C-_> <plug>NERDCommenterToggle
 
+nnoremap <leader>q :bp<cr>:bd #<cr>
+
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
