@@ -12,5 +12,5 @@ set background=dark
 let g:gruvbox_material_background = 'medium'
 let g:gruvbox_material_sign_column_background = 'none'
 let g:gruvbox_material_better_performance = 1
-
+let g:gruvbox_material_pallete = 'mix'
 colorscheme gruvbox-material

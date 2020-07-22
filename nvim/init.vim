@@ -6,10 +6,12 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'preservim/nerdcommenter'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'lilydjwg/colorizer'
+" Plug 'lilydjwg/colorizer'
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'sainnhe/gruvbox-material'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'alvan/vim-closetag'
 
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
@@ -47,3 +49,5 @@ source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/ctrlp.vim
 
+" vim-closetag
+let g:closetag_filetypes = 'typescript,jsx,javascript'
