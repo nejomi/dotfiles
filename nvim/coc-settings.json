@@ -18,14 +18,5 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.jsxSingleQuote": true,
-  "snippets.ultisnips.enable": false,
-
-  // explorer
-  "explorer.width": 25,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "explorer.keyMappings": {
-    "<cr>": ["expandable?", "expand", "open"],
-    "v": "open:vsplit"
-  }
+  "snippets.ultisnips.enable": false
 }

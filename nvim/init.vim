@@ -12,7 +12,6 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'alvan/vim-closetag'
-Plug 'Asheq/close-buffers.vim'
 
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
@@ -26,6 +25,7 @@ Plug 'junegunn/gv.vim'
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'honza/vim-snippets'
+Plug 'sainnhe/sonokai'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -44,7 +44,9 @@ call plug#end()
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
+"source $HOME/.config/nvim/themes/gruvbox.vim
 source $HOME/.config/nvim/themes/gruvbox-material.vim
+"source $HOME/.config/nvim/themes/sonokai.vim
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/signify.vim

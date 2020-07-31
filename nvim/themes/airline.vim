@@ -22,4 +22,4 @@ set showtabline=2
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode
 
-" let g:airline_theme = 'gruvbox_material'
+let g:airline_theme = 'gruvbox_material'
