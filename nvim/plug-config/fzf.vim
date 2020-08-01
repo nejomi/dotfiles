@@ -1,6 +1,6 @@
 " This is the default extra key bindings
 let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
+ \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
 
@@ -12,10 +12,10 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 map <C-f> :Files<CR>
 map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
+nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
-
+nnoremap <C-p> :GFiles<CR>
 
 let g:fzf_tags_command = 'ctags -R'
 " Border color

@@ -40,9 +40,9 @@ Plug 'ryanoasis/vim-devicons'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
+source $HOME/.config/nvim/plug-config/coc.vim
 "source $HOME/.config/nvim/themes/gruvbox.vim
 source $HOME/.config/nvim/themes/gruvbox-material.vim
 "source $HOME/.config/nvim/themes/sonokai.vim
@@ -50,11 +50,8 @@ source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
 
 " vim-closetag
 let g:closetag_filetypes = 'typescript,jsx,javascript'
-
-
-nnoremap <C-p> :GFiles<CR>
-nnoremap <Leader>pf :Files<CR>
 
