@@ -2,18 +2,19 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
-" Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'preservim/nerdcommenter'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'lilydjwg/colorizer'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'sainnhe/gruvbox-material'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'alvan/vim-closetag'
-
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+" Plug 'justinmk/vim-dirvish'
+" Plug 'tpope/vim-vinegar'
+" Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -22,8 +23,6 @@ Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
-
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'honza/vim-snippets'
 Plug 'sainnhe/sonokai'
 
@@ -48,9 +47,14 @@ source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/themes/gruvbox-material.vim
 "source $HOME/.config/nvim/themes/sonokai.vim
 source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/plug-config/rnvimr.vim
+source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/signify.vim
-source $HOME/.config/nvim/plug-config/ctrlp.vim
+source $HOME/.config/nvim/plug-config/fugitive.vim
 
 " vim-closetag
 let g:closetag_filetypes = 'typescript,jsx,javascript'
+
+
+nnoremap <C-p> :GFiles<CR>
+nnoremap <Leader>pf :Files<CR>
+

@@ -162,3 +162,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+inoremap <silent><expr> <C-space> coc#refresh()
