@@ -158,5 +158,5 @@ export NNN_USE_EDITOR=1
 
 export LC_COLLATE="C"
 export NNN_BMS='d:~/Downloads;p:~/Projects;h:~;o:~/dotfiles'
-export NNN_PLUG='o:fzopen;p:mocplay;d:diffs;t:nmount;m:-_mediainfo $nnn;s:_smplayer -minigui $nnn*;c:fzcd;a:-_mocp*;y:-_sync*;k:-_fuser -kiv $nnn*;i:-_imgview*'
+export NNN_PLUG='o:fzopen;p:mocplay;d:diffs;t:nmount;m:-_mediainfo $nnn;s:_smplayer -minigui $nnn*;c:fzcd;a:-_mocp*;y:-_sync*;k:-_fuser -kiv $nnn*;i:imgview'
 export NNN_COLORS='4231'
