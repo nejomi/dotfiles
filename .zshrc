@@ -100,10 +100,9 @@ eval "$(starship init zsh)"
 alias code="codium"
 alias proj="cd ~/Projects"
 alias f="ranger"
-alias v="nvim ."
-alias ve="nvim '+CocCommand explorer'"
-# xampp
-alias xampp="sudo /opt/lampp/manager-linux-x64.run"
+alias v="nvim"
+alias ve="nvim ."
+alias p="cd ~/Projects"
 
 # Add every binary that requires nvm, npm or node to run to an array of node globals
 NODE_GLOBALS=(`find ~/.nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' | xargs -n1 basename | sort | uniq`)
@@ -111,6 +110,7 @@ NODE_GLOBALS+=("node")
 NODE_GLOBALS+=("nvm")
 NODE_GLOBALS+=("nvim") 
 NODE_GLOBALS+=("nnn")
+NODE_GLOBALS+=("ranger")
 # Lazy-loading nvm + npm on node globals call
 load_nvm () {
   export NVM_DIR=~/.nvm
