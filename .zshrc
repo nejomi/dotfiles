@@ -67,9 +67,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
+plugins=(git)
 
-ZSH_TMUX_AUTOSTART=true
+#ZSH_TMUX_AUTOSTART=true
+#ZSH_TMUX_FIXTERM_WITH_256COLOR=true
 source $ZSH/oh-my-zsh.sh
 # User configuration 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -150,12 +151,12 @@ ne ()
     fi
 }
 
-
-alias n="ne -eR"
-export BROWSER=brave-browser
+alias www="live-server"
+alias n="ne -eRC"
+export BROWSER=brave
 export EDITOR=nvim
 export NNN_USE_EDITOR=1
 export LC_COLLATE="C"
 export NNN_BMS='d:~/Downloads;p:~/Projects;h:~;o:~/dotfiles'
 export NNN_PLUG='c:previewtui;o:fzopen;p:mocplay;d:diffs;t:nmount;m:-_mediainfo $nnn;s:_smplayer -minigui $nnn*;c:fzcd;a:-_mocp*;y:-_sync*;k:-_fuser -kiv $nnn*;i:imgview'
-export NNN_COLORS='4231'
+export NNN_COLORS='4141'
