@@ -1,3 +1,11 @@
+"▄█    ▄   ▄█    ▄▄▄▄▀        ▄   ▄█ █▀▄▀█ 
+"██     █  ██ ▀▀▀ █            █  ██ █ █ █ 
+"██ ██   █ ██     █       █     █ ██ █ ▄ █ 
+"▐█ █ █  █ ▐█    █         █    █ ▐█ █   █ 
+ "▐ █  █ █  ▐   ▀      ██   █  █   ▐    █  
+   "█   ██                   █▐        ▀   
+                            "▐             
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot' 
@@ -6,14 +14,10 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'preservim/nerdcommenter' 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'lilydjwg/colorizer'
-" Plug 'norcalli/nvim-colorizer.lua'
 Plug 'sainnhe/gruvbox-material'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes' 
 Plug 'alvan/vim-closetag'
-" Plug 'justinmk/vim-dirvish'
-" Plug 'tpope/vim-vinegar'
-" Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -30,6 +34,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'cocopon/iceberg.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'tomasiser/vim-code-dark'
+Plug 'srcery-colors/srcery-vim'
+Plug 'whatyouhide/vim-gotham'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -51,7 +57,8 @@ source $HOME/.config/nvim/plug-config/coc.vim
 "source $HOME/.config/nvim/themes/sonokai.vim
 "source $HOME/.config/nvim/themes/onedark.vim
 "source $HOME/.config/nvim/themes/nord.vim
-"source $HOME/.config/nvim/themes/vimone.vim
+source $HOME/.config/nvim/themes/codedark.vim
+"source $HOME/.config/nvim/themes/srcery.vim
 "source $HOME/.config/nvim/themes/iceberg.vim
 "source $HOME/.config/nvim/themes/oceanic-next.vim
 source $HOME/.config/nvim/themes/airline.vim
@@ -71,17 +78,3 @@ function! SynStack()
 endfunc
 
 nnoremap <Leader>; :call SynStack()<CR>
-
-set t_Co=256
-set termguicolors
-let g:codedark_term256=1
-
-colorscheme codedark
-
-let g:airline_theme='codedark'
-
-hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
-hi SignifySignAdd ctermbg=235 ctermfg=150 guibg=NONE guifg=#608B4E
-hi SignifySignChange ctermbg=235 ctermfg=109 guibg=NONE guifg=#9CDCFE
-hi SignifySignChangeDelete ctermbg=235 ctermfg=109 guibg=NONE guifg=#9CDCFE
-hi SignifySignDelete ctermbg=235 ctermfg=203 guibg=NONE guifg=#F44747
