@@ -7,11 +7,20 @@ let g:airline#extensions#tabline#right_alt_sep = ''
 
 " enable powerline fonts
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep = '▓▒░'
-let g:airline_right_sep = '░▒▓'
+
+" fade effect
+"let g:airline_left_sep = '▓▒░'
+"let g:airline_right_sep = '░▒▓'
+
+" remove ugly orange error
+let g:airline_section_warning = ''
+let g:airline_section_error = ''
 
 " Enable airline to use devicons
 let g:airline_powerline_fonts = 1
+
+" dont show commits status for git
+let g:airline#extensions#hunks#enabled=0
 
 " Just show the filename (no path) in the tab
 let g:airline#extensions#tabline#fnamemod = ':t'

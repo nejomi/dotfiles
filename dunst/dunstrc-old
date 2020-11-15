@@ -1,0 +1,67 @@
+[global]
+title = Dunst
+class = Dunst
+monitor = 0
+follow = mouse
+geometry = "350x6-21+52"
+indicate_hidden = yes
+shrink = yes
+
+transparency = 0
+separator_height = 2
+padding = 12
+horizontal_padding = 12
+frame_width = 2
+frame_color = "#7D8794"
+separator_color = "#7D8794"
+
+font = Iosevka Nerd Font 10
+
+line_height = 0
+markup = full
+format = "<b>%a</b>\n%s"
+alignment = left
+
+idle_threshold = 120
+show_age_threshold = 60
+sort = no
+word_wrap = yes
+ignore_newline = no
+stack_duplicates = false
+hide_duplicate_count = yes
+show_indicators = no
+sticky_history = no
+history_length = 20
+always_run_script = true
+corner_radius = 0
+icon_position = left
+max_icon_size = 75
+
+icon_path = /usr/share/icons/Papirus-Dark/48x48/actions/:/usr/share/icons/Papirus-Dark/48x48/apps/:/usr/share/icons/Papirus-Dark/48x48/devices/:/usr/share/icons/Papirus-Dark/48x48/emblems/:/usr/share/icons/Papirus-Dark/48x48/emotes/:/usr/share/icons/Papirus-Dark/48x48/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/places/:/usr/share/icons/Papirus-Dark/48x48/status/
+
+browser = brave-browser
+
+mouse_left_click = close_current
+mouse_middle_click = do_action
+mouse_right_click = close_all
+
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+Escape
+context = ctrl+shift+period
+
+[urgency_low]
+timeout = 3
+background = "#282C34"
+foreground = "#f9f9f9"
+
+[urgency_normal]
+timeout = 6
+background = "#282C34"
+foreground = "#f9f9f9"
+
+[urgency_critical]
+timeout = 0
+background = "#282C34"
+foreground = "#f9f9f9"

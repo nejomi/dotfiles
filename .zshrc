@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/vg/.oh-my-zsh"
+export PATH="$HOME/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -67,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 #ZSH_TMUX_AUTOSTART=true
 #ZSH_TMUX_FIXTERM_WITH_256COLOR=true
@@ -98,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(starship init zsh)"
-alias code="codium"
+# alias code="codium"
 alias proj="cd ~/Projects"
 alias f="ranger"
 alias v="nvim"
@@ -160,3 +161,4 @@ export LC_COLLATE="C"
 export NNN_BMS='d:~/Downloads;p:~/Projects;h:~;o:~/dotfiles'
 export NNN_PLUG='c:previewtui;o:fzopen;p:mocplay;d:diffs;t:nmount;m:-_mediainfo $nnn;s:_smplayer -minigui $nnn*;c:fzcd;a:-_mocp*;y:-_sync*;k:-_fuser -kiv $nnn*;i:imgview'
 export NNN_COLORS='4141'
+

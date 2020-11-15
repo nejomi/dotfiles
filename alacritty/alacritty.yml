@@ -1,7 +1,7 @@
 window:
     padding:
-      x: 2 
-      y: 4
+      x: 16
+      y: 16
     dimensions:
       columns: 90
       lines: 24
@@ -10,46 +10,40 @@ font:
     family: Iosevka
     style: Regular
 
-  #bold:
-    #family: Iosevka
-    #style: Bold
-
   italic:
     family: Iosevka
     style: Italic
 
   size: 13    
 
+# Colors (One Dark)
 colors:
   # Default colors
   primary:
-    background: '#1E1E1E'
-    foreground: '#D4D4D4'
+    background: '#282C34'
+    foreground: '#F9F9F9'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '#1E1E1E'
-    cursor: '#ffffff'
-
+  # Normal colors
   normal:
-    black:   '#292A2B'
-    red:     '#FF2C6D'
-    green:   '#19f9d8'
-    yellow:  '#FFB86C'
-    blue:    '#45A9F9'
-    magenta: '#FF75B5'
-    cyan:    '#67d3c2'
-    orange:  '#B084EB'
-    white:   '#E6E6E6'
-  bright:
-    black:   '#292A2B'
-    red:     '#FF2C6D'
-    green:   '#19f9d8'
-    yellow:  '#ffcc95'
-    blue:    '#6FC1FF'
-    magenta: '#FF9AC1'
-    cyan:    '#67d3c2'
-    white:   '#ffffff'
+    black:   '0x1e2127'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xabb2bf'
 
-cursor:
-  style: Beam
+  # Bright colors
+  bright:
+    black:   '0x5c6370'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xffffff'
+
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
