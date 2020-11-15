@@ -12,7 +12,7 @@ let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
-let g:NERDTreeWinSize=25
+let g:NERDTreeWinSize=20
 let g:NERDTreeLimitedSyntax = 1
 
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
