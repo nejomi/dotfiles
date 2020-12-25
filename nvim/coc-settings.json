@@ -19,5 +19,7 @@
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
   "diagnostic.infoSign": "•",
-  "suggest.enablePreview": true
+  "suggest.enablePreview": true,
+  "intelephense.format.enable": true,
+  "intelephense.telemetry.enabled": false
 }

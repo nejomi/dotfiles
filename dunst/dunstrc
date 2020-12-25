@@ -3,7 +3,7 @@
     # --- Display --- #
 
     # The monitor to be displayed to
-    monitor = 0
+    monitor = HDMI-0
 
     # Follow monitor with mouse
     follow = mouse
@@ -26,7 +26,7 @@
 
     # Draw a line between multiple notifications
     separator_height = 3
-    separator_color = "#7D8794"
+    separator_color = "#3B4252"
 
     # Set notification padding
     padding = 14
@@ -40,14 +40,14 @@
 
     # Border
     frame_width = 3
-    frame_color = "#7D8794"
+    frame_color = "#d9d9d9"
 
    
     # --- Text --- #
 
     # Set the font
     # font = "Noto Sans 11"
-    font = "Iosevka Nerd Font 11"
+    font = "Iosevka 11"
 
     # Set line height to font height
     line_height = 0
@@ -68,7 +68,7 @@
     #  %% Literal %
 
     markup = full
-    format = "<span font_desc='Iosevka Nerd Font 12'><b>%a</b></span>\n%s\n%b"
+    format = "<span font_desc='Iosevka 12'><b>%a</b></span>\n%s\n%b"
 
     # Left align the text
     alignment = left
@@ -180,17 +180,17 @@
 # --- Colors --- #
 
 [urgency_low]
-    background = "#282C34"
-    foreground = "#f9f9f9"
+    background = "#1e1e1e"
+    foreground = "#d4d4d4"
     timeout = 8
 
 [urgency_normal]
-    background = "#282C34"
-    foreground = "#f9f9f9"
+    background = "#1e1e1e"
+    foreground = "#d4d4d4"
     timeout = 8
 
 [urgency_critical]
-    background = "#282C34"
-    foreground = "#f9f9f9"
+    background = "#1e1e1e"
+    foreground = "#d4d4d4"
     timeout = 0
     icon = abrt

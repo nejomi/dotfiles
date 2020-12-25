@@ -2,8 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/vg/.oh-my-zsh"
+export ZSH="/home/virgil/.oh-my-zsh"
 export PATH="$HOME/bin:$PATH"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export PATH="$PATH:$HOME/.vim/plugged/phpactor/bin"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -99,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(starship init zsh)"
-# alias code="codium"
+
 alias proj="cd ~/Projects"
 alias f="ranger"
 alias v="nvim"
@@ -113,6 +115,7 @@ NODE_GLOBALS+=("nvm")
 NODE_GLOBALS+=("nvim") 
 NODE_GLOBALS+=("nnn")
 NODE_GLOBALS+=("ranger")
+
 # Lazy-loading nvm + npm on node globals call
 load_nvm () {
   export NVM_DIR=~/.nvm
@@ -124,6 +127,7 @@ for cmd in "${NODE_GLOBALS[@]}"; do
   eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
 done
 
+# nnn
 ne ()
 {
     # Block nesting of nnn in subshells
@@ -152,13 +156,30 @@ ne ()
     fi
 }
 
-alias www="live-server"
-alias n="ne -eRC"
+# stuff for nnn
 export BROWSER=brave
 export EDITOR=nvim
 export NNN_USE_EDITOR=1
 export LC_COLLATE="C"
+export LC_ALL=C
 export NNN_BMS='d:~/Downloads;p:~/Projects;h:~;o:~/dotfiles'
 export NNN_PLUG='c:previewtui;o:fzopen;p:mocplay;d:diffs;t:nmount;m:-_mediainfo $nnn;s:_smplayer -minigui $nnn*;c:fzcd;a:-_mocp*;y:-_sync*;k:-_fuser -kiv $nnn*;i:imgview'
 export NNN_COLORS='4141'
 
+# live server for static html css js
+alias www="live-server"
+
+# launch nnn
+alias n="ne -eRC"
+
+# colorful ls
+alias ls="exa -la"
+
+# get window names for i3
+alias gw="xprop | grep -i 'class'"
+
+# edit i3 config
+alias i3conf="nvim ~/dotfiles/i3/i3.config"
+
+# start mysql
+alias sqlstart="systemctl start mariadb.service"

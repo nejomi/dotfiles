@@ -1,0 +1,98 @@
+/* make insert box small than before */
+div.vimiumHUD {
+  width: auto;
+  left: 207px;
+}
+
+div.vimiumHUD span#hud-find-input,
+div.vimiumHUD span#hud-match-count {
+  color: #f8efe4;
+}
+
+div.vimiumHUD .hud-find {
+  background: #3f3f3f;
+  border: 1px solid #3f3f3f;
+}
+
+#vomnibar input {
+  color: #f8efe4;
+  background-color: #3f3f3f;
+  border-color: #3f3f3f;
+}
+
+div.vimiumHUD .vimiumHUDSearchArea {
+  background-color: #3f3f3f;
+}
+
+div.vimiumHUD .vimiumHUDSearchAreaInner {
+  color: #f8efe4;
+}
+
+div > .vimiumHintMarker {
+  /* linkhint boxes */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #fff785),
+    color-stop(100%, #ffc542)
+  );
+  border: 1px solid #e3be23;
+}
+
+div > .vimiumHintMarker span {
+  /* linkhint text */
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+input#vomnibarInput.vimiumReset {
+  color: #fff !important;
+  background-color: #111 !important;
+}
+
+#vomnibar {
+  border-color: black;
+  background-color: #222;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#vomnibar .vomnibarSearchArea {
+  background-color: #222;
+  border-bottom: white;
+}
+
+#vomnibar ul {
+  background-color: #222;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0 !important;
+}
+
+#vomnibar li {
+  border-bottom: #3f3f3f;
+}
+
+#vomnibar li .vomnibarUrl {
+  color: #d9d9d9;
+}
+
+#vomnibar li .vomnibarMatch {
+  color: #0a7aca;
+}
+
+#vomnibar li.vomnibarSelected {
+  background-color: #141414;
+}
+
+#vomnibar li em .vomnibarMatch,
+#vomnibar li .vomnibarTitle .vomnibarMatch {
+  color: white;
+}
+
+#vomnibar li em,
+#vomnibar li .vomnibarTitle {
+  color: #ddd;
+}
