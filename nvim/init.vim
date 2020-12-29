@@ -69,10 +69,10 @@ source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 "source $HOME/.config/nvim/themes/vimone.vim
 "source $HOME/.config/nvim/themes/gruvbox.vim
-"source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/themes/onedark.vim
 "source $HOME/.config/nvim/themes/gotham.vim
 "source $HOME/.config/nvim/themes/nord.vim
-source $HOME/.config/nvim/themes/codedark.vim
+"source $HOME/.config/nvim/themes/codedark.vim
 "source $HOME/.config/nvim/themes/nightowl.vim
 "source $HOME/.config/nvim/themes/iceberg.vim
 "source $HOME/.config/nvim/themes/oceanic-next.vim

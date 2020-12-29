@@ -2,7 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/virgil/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$PATH:$HOME/bin"
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 export PATH="$PATH:$HOME/.vim/plugged/phpactor/bin"
@@ -70,7 +71,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting) #zsh-autosuggestions 
+
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
 
 #ZSH_TMUX_AUTOSTART=true
 #ZSH_TMUX_FIXTERM_WITH_256COLOR=true
@@ -157,7 +161,7 @@ ne ()
 }
 
 # stuff for nnn
-export BROWSER=brave
+export BROWSER='/mnt/c/Windows/explorer.exe'
 export EDITOR=nvim
 export NNN_USE_EDITOR=1
 export LC_COLLATE="C"
@@ -170,10 +174,11 @@ export NNN_COLORS='4141'
 alias www="live-server"
 
 # launch nnn
-alias n="ne -eRC"
+alias n="ne -eR"
 
 # colorful ls
-alias ls="exa -la"
+# alias ls="exa -la"
+# alias ls="ls -la"
 
 # get window names for i3
 alias gw="xprop | grep -i 'class'"
