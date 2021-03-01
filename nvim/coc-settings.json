@@ -21,5 +21,6 @@
   "diagnostic.infoSign": "•",
   "suggest.enablePreview": true,
   "intelephense.format.enable": true,
-  "intelephense.telemetry.enabled": false
+  "intelephense.telemetry.enabled": false,
+  "emmet.includeLanguages": { "blade": "html" }
 }

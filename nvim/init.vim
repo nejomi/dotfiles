@@ -13,7 +13,7 @@ call plug#begin('~/.vim/plugged')
 
 " essential plugs
 Plug 'sheerun/vim-polyglot' 
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
 "Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'epilande/vim-react-snippets'
@@ -28,6 +28,7 @@ Plug 'alvan/vim-closetag'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'mboughaba/i3config.vim'
+Plug 'mattn/emmet-vim'
 
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -40,6 +41,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 
 " themes
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 Plug 'chriskempson/base16-vim'
 Plug 'joshdick/onedark.vim' 
 Plug 'rakr/vim-one'
@@ -48,6 +50,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'morhetz/gruvbox'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'sainnhe/edge'
+Plug 'vim-airline/vim-airline-themes'
 
 " git gutter
 if has('nvim') || has('patch-8.0.902')
@@ -67,13 +70,13 @@ call plug#end()
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/plug-config/coc.vim
-"source $HOME/.config/nvim/themes/vimone.vim
+source $HOME/.config/nvim/themes/vimone.vim
 "source $HOME/.config/nvim/themes/gruvbox.vim
-source $HOME/.config/nvim/themes/onedark.vim
-"source $HOME/.config/nvim/themes/gotham.vim
+"source $HOME/.config/nvim/themes/onedark.vim
+"source $HOME/.config/nvim/themes/spaceduck.vim
 "source $HOME/.config/nvim/themes/nord.vim
 "source $HOME/.config/nvim/themes/codedark.vim
-"source $HOME/.config/nvim/themes/nightowl.vim
+"source $HOME/.config/nvim/themes/base16.vim
 "source $HOME/.config/nvim/themes/iceberg.vim
 "source $HOME/.config/nvim/themes/oceanic-next.vim
 "source $HOME/.config/nvim/themes/ayu.vim
@@ -96,12 +99,3 @@ endfunc
 nnoremap <Leader>; :call SynStack()<CR>
 endif
 
-"set termguicolors
-"colorscheme base16-tomorrow-night
-"colorscheme nightfly
-
-"set background=dark
-"colorscheme oceanic_material
-
-"let g:oceanic_material_allow_bold=0
-"highlight Statement  gui=NONE cterm=NONE term=NONE

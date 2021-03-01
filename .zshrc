@@ -71,10 +71,21 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting) #zsh-autosuggestions 
+plugins=(git zsh-syntax-highlighting tmux) #zsh-autosuggestions 
+
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_UNICODE=true
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
+LANG="en_US.UTF-8"
+LC_COLLATE="en_US"
+LC_CTYPE="en_US"
+LC_MESSAGES="en_US"
+LC_MONETARY="en_US"
+LC_NUMERIC="en_US"
+LC_TIME="en_US"
+LC_ALL="en_US"
 
 #ZSH_TMUX_AUTOSTART=true
 #ZSH_TMUX_FIXTERM_WITH_256COLOR=true
@@ -103,8 +114,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-eval "$(starship init zsh)"
 
 alias proj="cd ~/Projects"
 alias f="ranger"
@@ -158,7 +167,9 @@ ne ()
             . "$NNN_TMPFILE"
             rm -f "$NNN_TMPFILE" > /dev/null
     fi
-}
+}  
+
+export TERM="xterm-256color"
 
 # stuff for nnn
 export BROWSER='/mnt/c/Windows/explorer.exe'
@@ -168,7 +179,10 @@ export LC_COLLATE="C"
 export LC_ALL=C
 export NNN_BMS='d:~/Downloads;p:~/Projects;h:~;o:~/dotfiles'
 export NNN_PLUG='c:previewtui;o:fzopen;p:mocplay;d:diffs;t:nmount;m:-_mediainfo $nnn;s:_smplayer -minigui $nnn*;c:fzcd;a:-_mocp*;y:-_sync*;k:-_fuser -kiv $nnn*;i:imgview'
-export NNN_COLORS='4141'
+export NNN_COLORS='4235'
+
+# bat
+export BAT_THEME="OneHalfDark"
 
 # live server for static html css js
 alias www="live-server"
@@ -177,7 +191,7 @@ alias www="live-server"
 alias n="ne -eR"
 
 # colorful ls
-# alias ls="exa -la"
+ alias ls="exa -la"
 # alias ls="ls -la"
 
 # get window names for i3
@@ -187,4 +201,18 @@ alias gw="xprop | grep -i 'class'"
 alias i3conf="nvim ~/dotfiles/i3/i3.config"
 
 # start mysql
-alias sqlstart="systemctl start mariadb.service"
+alias sqlstart="sudo service mysql start"
+
+# start apache
+alias serverstart="sudo service apache2 start && sudo service mysql start"
+
+# go home
+alias home="cd ~"
+
+# sudo
+alias please="sudo"
+
+# install
+alias install="apt install"
+
+eval "$(starship init zsh)"
