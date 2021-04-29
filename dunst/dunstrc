@@ -39,8 +39,8 @@
     idle_threshold = 0
 
     # Border
-    frame_width = 3
-    frame_color = "#d9d9d9"
+    frame_width = 2
+    frame_color = "#abb2bf"
 
    
     # --- Text --- #
@@ -180,17 +180,17 @@
 # --- Colors --- #
 
 [urgency_low]
-    background = "#1e1e1e"
-    foreground = "#d4d4d4"
+    background = "#282c34"
+    foreground = "#e5e9f0"
     timeout = 8
 
 [urgency_normal]
-    background = "#1e1e1e"
-    foreground = "#d4d4d4"
+    background = "#282c34"
+    foreground = "#e5e9f0"
     timeout = 8
 
 [urgency_critical]
-    background = "#1e1e1e"
-    foreground = "#d4d4d4"
+    background = "#282c34"
+    foreground = "#e5e9f0"
     timeout = 0
     icon = abrt

@@ -4,9 +4,9 @@ configuration {
   sidebar-mode:       false;
   modi:               "drun,run,window,emoji";
   disable-history:    false;
-  display-drun:       "💎";
+  display-drun:       "😈";
   display-run:        "Run";
   display-window:     "Running Apps";
-  icon-theme: "McMojave-circle";
+  icon-theme: "Papirus";
 }
 @import "~/.config/rofi/themes/slate.rasi"

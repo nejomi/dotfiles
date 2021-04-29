@@ -54,3 +54,5 @@ xnoremap <leader>p "_dP
 nnoremap <leader>x "_x=
 
 vnoremap X "_d
+
+nmap <silent> <C-n> :set hlsearch!<CR>

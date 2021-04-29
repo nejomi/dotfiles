@@ -5,8 +5,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:$HOME/bin"
 export PATH="$HOME/bin:$PATH"
-export PATH="$PATH:$HOME/.config/composer/vendor/bin"
-export PATH="$PATH:$HOME/.vim/plugged/phpactor/bin"
+#export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+#export PATH="$PATH:$HOME/.vim/plugged/phpactor/bin"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting tmux) #zsh-autosuggestions 
+plugins=(git zsh-syntax-highlighting) #zsh-autosuggestions 
 
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_UNICODE=true
@@ -172,23 +172,22 @@ ne ()
 export TERM="xterm-256color"
 
 # stuff for nnn
-export BROWSER='/mnt/c/Windows/explorer.exe'
 export EDITOR=nvim
 export NNN_USE_EDITOR=1
 export LC_COLLATE="C"
 export LC_ALL=C
 export NNN_BMS='d:~/Downloads;p:~/Projects;h:~;o:~/dotfiles'
 export NNN_PLUG='c:previewtui;o:fzopen;p:mocplay;d:diffs;t:nmount;m:-_mediainfo $nnn;s:_smplayer -minigui $nnn*;c:fzcd;a:-_mocp*;y:-_sync*;k:-_fuser -kiv $nnn*;i:imgview'
-export NNN_COLORS='4235'
+export NNN_COLORS='4123'
 
 # bat
-export BAT_THEME="OneHalfDark"
+export BAT_THEME="base16"
 
 # live server for static html css js
 alias www="live-server"
 
 # launch nnn
-alias n="ne -eR"
+alias n="ne -eRC"
 
 # colorful ls
  alias ls="exa -la"
@@ -212,7 +211,7 @@ alias home="cd ~"
 # sudo
 alias please="sudo"
 
-# install
-alias install="apt install"
+# caps
+alias caps="~/dotfiles/scripts/caps-ctrl-enter.sh"
 
 eval "$(starship init zsh)"
