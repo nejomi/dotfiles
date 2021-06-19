@@ -7,15 +7,15 @@ window:
       lines: 24
 font:
   bold:
-    family: Iosevka
+    family: Fira Code Nerd Font
     style: Bold
 
   normal:
-    family: Iosevka
+    family: Fira Code Nerd Font
     style: Regular
 
   italic:
-    family: Iosevka
+    family: Fira Code Nerd Font
     style: Italic
   
   size: 12
