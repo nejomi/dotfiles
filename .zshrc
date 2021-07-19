@@ -183,6 +183,9 @@ export NNN_COLORS='4123'
 # bat
 export BAT_THEME="base16"
 
+# pfetch
+export PF_INFO="ascii title os wm kernel uptime pkgs memory" 
+
 # live server for static html css js
 alias www="live-server"
 
@@ -205,13 +208,20 @@ alias sqlstart="sudo service mysql start"
 # start apache
 alias serverstart="sudo service apache2 start && sudo service mysql start"
 
-# go home
-alias home="cd ~"
+alias lamp="sudo systemctl start httpd && sudo systemctl start mariadb"
 
 # sudo
 alias please="sudo"
 
+alias code="codium"
+
 # caps
 alias caps="~/dotfiles/scripts/caps-ctrl-enter.sh"
+
+# redhift
+alias nightmode="redshift -l 14.573617:121.0220416 &"
+
+# random
+alias rand="openssl rand -base64"
 
 eval "$(starship init zsh)"

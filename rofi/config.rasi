@@ -4,7 +4,8 @@ configuration {
   sidebar-mode:       false;
   modi:               "drun,run,window,emoji";
   disable-history:    false;
-  display-drun:       "😈";
+  display-drun:       "👟";
+  display-emoji:      "😂";
   display-run:        "Run";
   display-window:     "Running Apps";
   icon-theme: "Papirus";

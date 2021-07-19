@@ -40,8 +40,7 @@
 
     # Border
     frame_width = 2
-    frame_color = "#abb2bf"
-
+    frame_color = "#B6B0E9"
    
     # --- Text --- #
 
@@ -110,7 +109,8 @@
     max_icon_size = 60
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Papirus-Dark/48x48/actions/:/usr/share/icons/Papirus-Dark/48x48/apps/:/usr/share/icons/Papirus-Dark/48x48/devices/:/usr/share/icons/Papirus-Dark/48x48/emblems/:/usr/share/icons/Papirus-Dark/48x48/emotes/:/usr/share/icons/Papirus-Dark/48x48/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/places/:/usr/share/icons/Papirus-Dark/48x48/status/
+    # icon_path = /usr/share/icons/Papirus-Dark/48x48/actions/:/usr/share/icons/Papirus-Dark/48x48/apps/:/usr/share/icons/Papirus-Dark/48x48/devices/:/usr/share/icons/Papirus-Dark/48x48/emblems/:/usr/share/icons/Papirus-Dark/48x48/emotes/:/usr/share/icons/Papirus-Dark/48x48/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/places/:/usr/share/icons/Papirus-Dark/48x48/status/
+    icon_path = /usr/share/icons/Papirus-Light/48x48/actions/:/usr/share/icons/Papirus-Light/48x48/apps/:/usr/share/icons/Papirus-Light/48x48/devices/:/usr/share/icons/Papirus-Light/48x48/emblems/:/usr/share/icons/Papirus-Light/48x48/emotes/:/usr/share/icons/Papirus-Light/48x48/mimetypes/:/usr/share/icons/Papirus-Light/48x48/places/:/usr/share/icons/Papirus-Light/48x48/status/
 
     # --- History --- #
 
@@ -180,17 +180,17 @@
 # --- Colors --- #
 
 [urgency_low]
-    background = "#282c34"
-    foreground = "#e5e9f0"
+    background = "#FAFAFA"
+    foreground = "#383A42"
     timeout = 8
 
 [urgency_normal]
-    background = "#282c34"
-    foreground = "#e5e9f0"
+    background = "#FAFAFA"
+    foreground = "#383A42"
     timeout = 8
 
 [urgency_critical]
-    background = "#282c34"
-    foreground = "#e5e9f0"
+    background = "#FAFAFA"
+    foreground = "#383A42"
     timeout = 0
     icon = abrt
