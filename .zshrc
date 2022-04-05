@@ -85,7 +85,6 @@ LC_MESSAGES="en_US"
 LC_MONETARY="en_US"
 LC_NUMERIC="en_US"
 LC_TIME="en_US"
-LC_ALL="en_US"
 
 #ZSH_TMUX_AUTOSTART=true
 #ZSH_TMUX_FIXTERM_WITH_256COLOR=true
@@ -175,10 +174,17 @@ export TERM="xterm-256color"
 export EDITOR=nvim
 export NNN_USE_EDITOR=1
 export LC_COLLATE="C"
-export LC_ALL=C
 export NNN_BMS='d:~/Downloads;p:~/Projects;h:~;o:~/dotfiles'
 export NNN_PLUG='c:previewtui;o:fzopen;p:mocplay;d:diffs;t:nmount;m:-_mediainfo $nnn;s:_smplayer -minigui $nnn*;c:fzcd;a:-_mocp*;y:-_sync*;k:-_fuser -kiv $nnn*;i:imgview'
 export NNN_COLORS='4123'
+export NNN_FIFO=/tmp/nnn.fifo
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux -u
+fi
+
+# launch nnn
+alias n="ne -eR"
 
 # bat
 export BAT_THEME="base16"
@@ -189,12 +195,9 @@ export PF_INFO="ascii title os wm kernel uptime pkgs memory"
 # live server for static html css js
 alias www="live-server"
 
-# launch nnn
-alias n="ne -eRC"
-
 # colorful ls
- alias ls="exa -la"
-# alias ls="ls -la"
+alias ls="exa -la"
+#alias ls="ls -la --color=auto"
 
 # get window names for i3
 alias gw="xprop | grep -i 'class'"
@@ -213,7 +216,7 @@ alias lamp="sudo systemctl start httpd && sudo systemctl start mariadb"
 # sudo
 alias please="sudo"
 
-alias code="codium"
+#alias code="codium"
 
 # caps
 alias caps="~/dotfiles/scripts/caps-ctrl-enter.sh"

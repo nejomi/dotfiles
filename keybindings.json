@@ -66,6 +66,11 @@
     "when": "explorerViewletFocus"
   },
   {
+    "key": "ctrl+d",
+    "command": "deleteFile",
+    "when": "explorerViewletFocus"
+  },
+  {
     "key": "ctrl+shift+e",
     "command": "workbench.view.explorer"
   },
@@ -84,4 +89,3 @@
     "when": "explorerViewletVisible"
   }
 ]
-

@@ -12,10 +12,6 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
       "before": ["<C-n>"],
       "commands": [":nohl"]
     },
@@ -24,15 +20,15 @@
       "commands": ["workbench.action.nextEditor"]
     },
     {
-      "before": ["K"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
       "before": ["Shift+Tab"],
       "commands": ["workbench.action.previousEditor"]
     },
     {
-      "before": ["<leader>", "q"],
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "c"],
       "commands": ["workbench.action.closeActiveEditor"]
     }
   ],
@@ -41,13 +37,12 @@
     "<C-a>": false,
     "<C-f>": false
   },
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "off",
   "workbench.iconTheme": "vscode-icons",
   "editor.fontFamily": "'FiraCode Nerd Font'",
   "workbench.editor.enablePreview": false,
   "editor.minimap.enabled": false,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "blade.format.enable": true,
   "explorer.confirmDelete": false,
@@ -57,7 +52,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[blade]": {
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "editor.defaultFormatter": "onecentlin.laravel-blade"
   },
   "[javascript]": {
@@ -65,7 +60,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.jsxSingleQuote": true,
-  "prettier.jsxBracketSameLine": true,
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
   "prettier.useEditorConfig": false,
@@ -87,18 +81,35 @@
     "editor.defaultFormatter": "octref.vetur",
     "editor.tabSize": 2
   },
+  "[php]": {
+    "editor.tabSize": 4
+  },
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.lineNumbers": "relative",
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
-  "auto-close-tag.disableOnLanguage": ["javascript"],
   "workbench.sideBar.location": "right",
   "editor.cursorStyle": "line",
   "editor.insertSpaces": true,
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.fontWeight": 300,
+  "workbench.startupEditor": "none",
+  "vsicons.dontShowNewVersionMessage": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.colorTheme": "Atom One Dark"
 }
-
