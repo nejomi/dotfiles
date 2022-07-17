@@ -180,7 +180,8 @@ export NNN_COLORS='4123'
 export NNN_FIFO=/tmp/nnn.fifo
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux -u
+  # only 1 session 'GLORIOSO' and use same session everytime
+  exec tmux new-session -A -s Glorioso
 fi
 
 # launch nnn
