@@ -5,6 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:$HOME/bin"
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 #export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 #export PATH="$PATH:$HOME/.vim/plugged/phpactor/bin"
 
