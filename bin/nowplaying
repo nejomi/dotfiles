@@ -1,0 +1,23 @@
+if ps -C spotify > /dev/null; then
+	PLAYER="spotify"
+elif ps -C spotifyd > /dev/null; then
+	PLAYER="spotifyd"
+fi
+
+if [ "$PLAYER" = "spotify" ] || [ "$PLAYER" = "spotifyd" ]; then
+	ARTIST=$(playerctl metadata artist)
+	TRACK=$(playerctl metadata title)
+
+	# Truncate artist and track to a maximum of 12 characters
+	if [ ${#ARTIST} -gt 20 ]; then
+	    ARTIST="${ARTIST:0:18}.."
+	fi
+
+	if [ ${#TRACK} -gt 20 ]; then
+	    TRACK="${TRACK:0:18}.."
+	fi
+
+	if [ "$ARTIST" ] && [ "$TRACK" ]; then
+	    echo "$ARTIST - $TRACK"
+	fi
+fi

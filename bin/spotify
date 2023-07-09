@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Launch the Flatpak application
+flatpak run com.spotify.Client &
+
+# Wait for the application to start
+sleep 5
+
+# Resize the window
+xdotool search --onlyvisible --class spotify windowactivate --sync key --clearmodifiers ctrl+super+Down
+xdotool search --onlyvisible --class spotify windowsize 1000 600
