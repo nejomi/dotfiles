@@ -1,41 +1,11 @@
 {
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-      {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
-      }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-      {
-        "before": ["<C-n>"],
-        "commands": [":nohl"]
-      },
-      {
-        "before": ["Tab"],
-        "commands": ["workbench.action.nextEditor"]
-      },
-      {
-        "before": ["Shift+Tab"],
-        "commands": ["workbench.action.previousEditor"]
-      },
-      {
-        "before": ["K"],
-        "commands": ["editor.action.showHover"]
-      },
-      {
-        "before": ["<leader>", "c"],
-        "commands": ["workbench.action.closeActiveEditor"]
-      }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-      "<C-a>": false,
-      "<C-f>": false
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "window.commandCenter": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
     },
     "telemetry.telemetryLevel": "off",
     "workbench.iconTheme": "vscode-icons",
@@ -43,15 +13,10 @@
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
-    "blade.format.enable": true,
     "explorer.confirmDelete": false,
     "[jsonc]": {
       "editor.tabSize": 2,
       "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[blade]": {
-      "editor.tabSize": 4,
-      "editor.defaultFormatter": "onecentlin.laravel-blade"
     },
     "[javascript]": {
       "editor.tabSize": 2,
@@ -74,17 +39,13 @@
     "[json]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[vue]": {
-      "editor.defaultFormatter": "octref.vetur",
-      "editor.tabSize": 2
-    },
     "[php]": {
-      "editor.tabSize": 4
+      "editor.tabSize": 4,
+      "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
     },
     "[cpp]": {
       "editor.tabSize": 4
     },
-    "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
     "window.dialogStyle": "custom",
     "window.titleBarStyle": "custom",
@@ -94,10 +55,7 @@
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.fontFamily": "FiraCode NF",
-    "editor.fontSize": 16,
     "editor.fontWeight": 400,
-    "workbench.startupEditor": "none",
     "vsicons.dontShowNewVersionMessage": true,
     "[html]": {
       "editor.defaultFormatter": "vscode.html-language-features"
@@ -112,17 +70,15 @@
     "typescript.preferences.quoteStyle": "single",
     "javascript.preferences.quoteStyle": "single",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.colorTheme": "Atom One Dark",
-
-    // Disable bracket colors
-    // Enables/Disables the coloring of the brackets themselves
     "editor.bracketPairColorization.enabled": false, 
-
-    // Enables/Disables the highlighting of the bracket-pair guides
     "editor.guides.highlightActiveBracketPair": false,
     "editor.guides.highlightActiveIndentation": false,
-
-    // Enables/Disables the Coloring of the bracket-pair guides.
     "editor.guides.bracketPairs": false,
-  }
-  
+    "editor.mouseWheelScrollSensitivity": 0.5,
+    "explorer.compactFolders": false,
+    "reactSnippets.settings.importReactOnTop": false,
+    "workbench.colorTheme": "dark-plus-syntax",
+    "[rust]": {
+      "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    }
+}
