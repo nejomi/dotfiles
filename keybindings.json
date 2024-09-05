@@ -1,4 +1,4 @@
-[
+[
   {
     "key": "ctrl+h",
     "command": "workbench.action.navigateLeft"
@@ -87,5 +87,13 @@
     "key": "ctrl+shift+e",
     "command": "-workbench.action.toggleSidebarVisibility",
     "when": "explorerViewletVisible"
-  }
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.showCommands"
+  },
 ]
